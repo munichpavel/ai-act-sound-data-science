@@ -38,6 +38,10 @@ Once it has launched (this can take a couple of minutes the first time), you sho
 
 ![binder launched](docs/graphics/binder-launched.png)
 
+### Other options
+
+[Google Colab](https://colab.research.google.com), but it seems for our workshop's required functionality, you either have to hacky manual stuff or authorize Colab access to your *entire* Google drive.
+
 ## Resources
 
 * [Introduction to data science, Slavko Žitnik and Erik Štrumbelj](https://fri-datascience.github.io/course_ids/handbook/)
