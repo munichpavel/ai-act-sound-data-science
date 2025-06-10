@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ds-workshop"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "workshop", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "~3.12"
+pandas = "^2.3.0"
+ydata-profiling = "^4.16.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.4.2"
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+markers = [
+    "notebook: marks tests as a notebook run (deselect with '-m \"not notebook\"')",
+]
