@@ -1,3 +1,16 @@
 # notebooks
 .ipynb_checkpoints/
 _*.ipynb
+
+# local os
+.DS_Store
+
+# virtual env
+venv*/
+.venv*/
+
+# dot files
+.env*
+
+# testing
+.pytest_cache/
