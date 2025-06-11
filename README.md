@@ -21,7 +21,47 @@ Next, `cd` into the created folder containing this repository.
 Finally, to install python dependencies,
 
 * create a virtual environment (recommended)  e.g. with [venv](https://docs.python.org/3/library/venv.html), [conda](https://docs.conda.io/en/latest/) or other.
-* install python dependencies with `pip install -r requirements.txt` in a virtual environment.
+* activate your virtual environment, and install python dependencies with `pip install -r requirements.txt -r requirements-dev.txt`.
+
+In summary, in your local folder of choice, run
+
+```shell
+git clone https://github.com/munichpavel/ai-act-sound-data-science.git
+cd ai-act-sound-data-science
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt -r requirements-dev.txt
+```
+
+If using the python standard library's [venv](https://docs.python.org/3/library/venv.html), these steps would look something like
+
+```shell
+➜  workshop-clones git:(main) ✗ git clone https://github.com/munichpavel/ai-act-sound-data-science.git
+Cloning into 'ai-act-sound-data-science'...
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 39 (delta 10), reused 33 (delta 7), pack-reused 0 (from 0)
+Receiving objects: 100% (39/39), 812.23 KiB | 6.45 MiB/s, done.
+Resolving deltas: 100% (10/10), done.
+➜  workshop-clones git:(main) ✗ cd ai-act-sound-data-science
+➜  ai-act-sound-data-science git:(main) python -m venv .venv
+➜  ai-act-sound-data-science git:(main) ✗ source .venv/bin/activate
+(.venv) ➜  ai-act-sound-data-science git:(main) ✗ pip install -r requirements.txt -r requirements-dev.txt
+Collecting ydata-profiling
+  Downloading ydata_profiling-4.16.1-py2.py3-none-any.whl (400 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 400.1/400.1 KB 5.7 MB/s eta 0:00:00
+Collecting pandas
+  Downloading pandas-2.3.0-cp39-cp39-macosx_11_0_arm64.whl (10.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 69.6 MB/s eta 0:00:00
+Collecting notebook
+  Downloading notebook-7.4.3-py3-none-any.whl (14.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.3/14.3 MB 59.5 MB/s eta 0:00:00
+Collecting pytest
+  Downloading pytest-8.4.0-py3-none-any.whl (363 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 363.8/363.8 KB 50.0 MB/s eta 0:00:00
+...
+```
 
 
 ### Option 2, remotely using [binder](https://mybinder.readthedocs.io/en/latest/index.html#)
