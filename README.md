@@ -6,6 +6,8 @@
 
 ### Option 1, local installation
 
+**Warning**: [ydata-profiling](https://docs.profiling.ydata.ai/latest/) install with python 3.13 [fails](https://github.com/munichpavel/ai-act-sound-data-science/actions/runs/15579643423/job/43871658179), so either use python 3.12 or lower, or [Option 2](#option-2-remotely-using-binder), below.
+
 First download the repository code in a local folder of your choice, either via `git clone`ing with
 
 ```shell
