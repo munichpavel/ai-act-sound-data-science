@@ -20,6 +20,7 @@ notebook_dir = project_root / 'notebooks'
     'notebook_path',
     [
         notebook_dir / 'eda-completed.ipynb',
+        notebook_dir / 'extra-exercises.ipynb',
     ]
 )
 def test_ipynb(notebook_path, monkeypatch, tmpdir):
