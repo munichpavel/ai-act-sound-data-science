@@ -3,7 +3,14 @@
 
 name: CI for ai-act-sound-data-science workshop
 
-on: push
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'requirements*.txt'
+      - 'notebooks/**'
+      - '.github/**'
 
 permissions:
   contents: read
