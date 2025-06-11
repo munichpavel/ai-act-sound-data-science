@@ -33,7 +33,7 @@ source .venv/bin/activate
 pip install -r requirements.txt -r requirements-dev.txt
 ```
 
-If using the python standard library's [venv](https://docs.python.org/3/library/venv.html), these steps would look something like
+If using the python standard library's [venv](https://docs.python.org/3/library/venv.html), these steps, run one by one, would look something like
 
 ```shell
 ➜  workshop-clones git:(main) ✗ git clone https://github.com/munichpavel/ai-act-sound-data-science.git
@@ -63,6 +63,14 @@ Collecting pytest
 ...
 ```
 
+To launch a jupyter notebook server and client, run from local repository root `jupyter notebook`:
+
+```shell
+(.venv) ➜  ai-act-sound-data-science git:(main) ✗ jupyter notebook
+[I 2025-06-11 09:09:55.011 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-06-11 09:09:55.015 ServerApp] jupyter_server_terminals | extension was successfully linked.
+...
+```
 
 ### Option 2, remotely using [binder](https://mybinder.readthedocs.io/en/latest/index.html#)
 
