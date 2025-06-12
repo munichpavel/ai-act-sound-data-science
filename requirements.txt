@@ -1,2 +1,4 @@
+notebook
+ipywidgets
 ydata-profiling
 pandas
