@@ -19,7 +19,8 @@ notebook_dir = project_root / 'notebooks'
 @pytest.mark.parametrize(
     'notebook_path',
     [
-        notebook_dir / 'eda-completed.ipynb',
+        notebook_dir / 'data-quality.ipynb',
+        notebook_dir / 'completed' / 'data-quality.ipynb',
         notebook_dir / 'extra-exercises.ipynb',
     ]
 )
