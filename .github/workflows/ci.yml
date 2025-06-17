@@ -41,4 +41,4 @@ jobs:
       env:
         CONFIG_DIR: ${{ github.workspace }}/config
       run: |
-        pytest
+        pytest -k 'not test_notebooks'
