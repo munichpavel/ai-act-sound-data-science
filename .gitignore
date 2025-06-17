@@ -2,6 +2,9 @@
 .ipynb_checkpoints/
 _*.ipynb
 
+# output
+eda-output/
+
 # local os
 .DS_Store
 
@@ -12,5 +15,6 @@ venv*/
 # dot files
 .env*
 
-# testing
+# cache
 .pytest_cache/
+__pycache__/
