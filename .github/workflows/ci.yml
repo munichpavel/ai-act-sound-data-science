@@ -38,5 +38,7 @@ jobs:
         pip install -r requirements.txt -r requirements-dev.txt
         pip install .
     - name: Test with pytest
+      env:
+        CONFIG_DIR: ${{ github.workspace }}/config
       run: |
         pytest

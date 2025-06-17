@@ -2,16 +2,17 @@
 consciously imitating frameworks like GreatExpectations and dbt.
 """
 from pathlib import Path
+import os
 from typing import Any
 
 from omegaconf import OmegaConf
 import pandas as pd
 
 
-PROJECT_ROOT = Path(__file__).parents[2]
+CONFIG_DIR = Path(os.environ['CONFIG_DIR'])
 
 def get_failed_data_expectations(df: pd.DataFrame, expectation_suite_name: str) -> list[dict]:
-    data_conf = load_data_conf(root_dir=PROJECT_ROOT)
+    data_conf = load_data_conf()
     expectations = data_conf.expectations[expectation_suite_name]
     res = []
     for expectation_name, expectation_val in expectations.items():
@@ -21,8 +22,8 @@ def get_failed_data_expectations(df: pd.DataFrame, expectation_suite_name: str) 
     return res
 
 
-def load_data_conf(root_dir: Path) -> OmegaConf:
-    data_conf = OmegaConf.load(root_dir / 'config' / 'data.yaml')
+def load_data_conf() -> OmegaConf:
+    data_conf = OmegaConf.load(CONFIG_DIR / 'data.yaml')
     return data_conf
 
 
