@@ -1,0 +1,3 @@
+expectations:
+  ClaimData:
+    expect_compound_unique_fields: ['customer_id', 'year']
