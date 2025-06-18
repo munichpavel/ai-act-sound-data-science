@@ -3,3 +3,4 @@ ipywidgets
 ydata-profiling
 pandas
 omegaconf
+scikit-learn
