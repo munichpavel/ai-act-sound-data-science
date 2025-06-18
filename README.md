@@ -74,6 +74,12 @@ To launch a jupyter notebook server and client, run from local repository root `
 ...
 ```
 
+If you want to use the provided, custom module `workshop` in `src/workshop`, then you will need to additionally
+
+1. Copy `.envrc.example` to `.envrc` and enter your project's root directory location
+1. Source `.envrc`
+1. Run `pip install -e .` (or without the `e` if you don't want to make changes)
+
 ### Option 2, remotely using [binder](https://mybinder.readthedocs.io/en/latest/index.html#)
 
 
