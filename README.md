@@ -84,7 +84,7 @@ If you want to use the provided, custom module `workshop` in `src/workshop`, the
 
 
 To open this repository in your own binder instance, click
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/munichpavel/ai-act-sound-data-science.git)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/munichpavel/ai-act-sound-data-science.git/HEAD).
 
 While binder is launching, you should see something like
 
