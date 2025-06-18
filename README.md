@@ -94,6 +94,14 @@ Once it has launched (this can take a couple of minutes the first time), you sho
 
 ![binder launched](docs/graphics/binder-launched.png)
 
+Note: If you want to use a custom module in the repo, you will have to manually install it.
+
+Open a terminal by clicking as shown below:
+
+![terminal launcher](docs/graphics/2025-06-18-launcher-terminal.png)
+
+and enter `pip install -e .`.
+
 ### Other options
 
 [Google Colab](https://colab.research.google.com), but it seems for our workshop's required functionality, you either have to hacky manual stuff or authorize Colab access to your *entire* Google drive.
